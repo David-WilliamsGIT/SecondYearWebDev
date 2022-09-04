@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<!--David Williams, C00263768, CyberCrime & IT, 02/12/2021-->
+<body>
+    <form class="form">
+        <h1>Organisation</h1> 
+
+        <h2>Enter your details</h2>
+        <!--Enter your first name box-->
+        <div class="inputbox">
+            <label for="Firstname">First Name:</label>
+            <input type="text" name="firstname" id="Firstname" placeholder="First Name" required>
+        </div>
+        <!--Enter your surename box-->
+        <div class="inputbox"> <!--A dividing second box for the last name-->
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" id="surname" placeholder="Surename" required>
+        </div>
+
+        <div class="email"><!--A diving box for emails-->
+            <label for="Email">Email: </label>
+            <input type="email" name="email" id="email"placeholder="email" title="You must enter a valid email"> 
+        </div>
+
+        <div class="dateofbirth"><!--A diving box for the date of birth-->
+            <label for="dateofbirth">Date of Birth:</label>
+            <input type="date" id="start" name="trip-start"
+            value="11-11-2021" min="01-01-1950" max="31-12-2021" required>
+        </div>
+
+        <!--Enter your phone number with a range of numbers and spaces-->
+        <div class="phone">
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> 
+        </div>
+
+        <!--A list of checkboxes to tick for things that you/I like-->
+        
+
+        <div class="checkbox1"> <!--A box where you can tick checkboxes for what electrics you have-->
+            <h2 class="second options">Things I like</h2>
+            <p class="text">Select the things you like:</p>
+            <!--tick box for computers-->
+            <div class="Computers">
+                <input type="checkbox" name="likes" id="E1" value="pc">
+                <label for="E1">Do you like computers?</label>
+            </div>
+            <!--tick box for plants-->
+            <div class="plants">
+                <input type="checkbox" name="likes" id="E2" value="plants">
+                <label for="E2">Do you like plants?</label>
+            </div>
+            <!--tick box for sports-->
+            <div class="sports">
+                    <input type="checkbox" name="likes" id="E3" value="sports">
+                <label for="E3">Do you like sports?</label>
+            </div>
+            <!--tick box for videogames-->
+            <div class="videogames">
+                    <input type="checkbox" name="likes" id="E4" value="Video games">
+                    <label for="E4">Do you like video games?</label>
+            </div>
+            <!--tick box for college-->
+            <div class="college">
+                    <input type="checkbox" name="likes" id="E4" value="college">
+                    <label for="E4">Do you like college?</label>
+            </div>
+            <!--tick box for travelling-->
+            <div class="travelling">
+                    <input type="checkbox" name="likes" id="E4" value="travelling">
+                    <label for="E4">Do you like travelling?</label>
+            </div>
+        </div>
+        
+        <div class="radiobox"> <!--A divided box for the restered form with a radio buttom which can only one can be selected-->
+            <label class="question">How did you get to our site?</label><br>
+            <input type="radio" name="site" id="searchengine" value="Regy"/> <!--The radio button called register-->
+            <label for="searchengine">Search engine?</label><br>
+            <input type="radio" name="site" id="links" value="Regy"/>
+            <label for="links">Links?</label><br>
+            <input type="radio" name="site" id="anothersite" value="Regy"/>
+            <label for="anothersite">Another site?</label><br>
+            <input type="radio" name="site" id="book" value="Regy"/>
+            <label for="book">Reference in a book?</label><br>
+            <input type="radio" name="site" id="other" value="Regy"/>
+            <label for="other">Other?</label><br>
+        </div>
+
+        <!--A slider to rate the site 0 out of 10 as asked-->
+        <div class="ratesite">
+            <label for="ratesite">Rate</label>
+            <select name="number" id="ratesite">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+      </select>
+        </div>
+        
+        <div class="myButton"> <!--A Submiting button for both when all the information is entered and to clear that information-->
+            <input type="submit" value="Send Form" name="submit"><br><br>
+            <input type="reset" value="Clear Form" name="rest">
+        </div>
+
+    </form>
+
+</body>
+</html>
