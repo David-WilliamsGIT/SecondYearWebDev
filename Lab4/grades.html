@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prompt to enter tha letter for the grade
+        var grade = prompt("What grade did you get?")
+        document.write(grade)
+        switch(grade)
+        {
+            case 'a':
+                // When a entered, will return very good
+                 alert("Very Good!")
+                break;
+            case 'b':
+                // When b entered, will return very good
+                alert("Pretty Good!")
+                break;
+            case 'c':
+                // When c entered, will return very good
+                 alert("passed")
+                break;
+            case 'd':
+                // When d entered, will return very good
+                 alert("Not so good!")
+                break;
+            case 'e':
+                // When e entered will return failed
+                 alert("Failed")
+                break;
+            default :
+            // When anything other than a - e entered into the promt, will return
+                 alert("Uknown Grade")  
+                break;
+        }
+        
+    </script>
+</body>
+</html>

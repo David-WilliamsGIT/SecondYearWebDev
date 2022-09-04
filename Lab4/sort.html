@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array with a list of names
+        const Array = ["David", "John", "Julia", "Dominik", "Alma", "Marcin", "Wiktoria"]
+        document.writeln("Current array = " + Array) // printing out the original array
+
+        // function to sort the array
+        const arrayName = (Array) => {   
+                Array.sort() // sorting the array
+                return Array
+        }
+        arrayName(Array)
+        document.writeln('<br>' + Array) // printing the sorted array
+    </script>
+</body>
+</html>

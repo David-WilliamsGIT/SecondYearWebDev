@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        x = 0
+        y = 0
+        z = 0
+        var x = parseInt(prompt("What is your first number: ")) 
+        var y = parseInt(prompt("What is your second number: "))
+        var z = parseInt(prompt("What is your third number: "))
+        var input = prompt("Hit Entere to begin"); // prompt to enter into the function to enter the largest value
+        maxOfThree(input)
+        function maxOfThree(input) // function beggining
+        {        
+            // if statement to check for the largest value
+            if(x > y && x > z)
+             {
+                 document.write("The variable: " + x + "is the biggest number")
+             }
+            else if(y > x && y > z)
+             {
+                document.write("The variable: " + y + "is the biggest number")
+             }
+            else(z > x && z > y)
+            {
+                document.write("The variable: " + z + "is the biggest number")
+            }
+            return input // return the input and output the largest value
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input = parseInt(prompt("Enter a number: "))
+        var pass = 0
+        var fail = 0
+        var result = 0
+        var validResults = 0
+        
+        input= prompt("Enter the number to test: ");
+        input = parseInt(input);
+        while(input != -1) // a while loop to keep keep testing the entered value until -1 is entered
+        {
+        
+        if(input < 40)
+            {
+                fail++
+                result = input + fail;
+            }
+        else(input >= 40 && input <= 100)
+            {
+                pass++
+                result = input + pass
+            }
+        validResults = fail + pass;
+            
+        input = prompt("Enter the next number: "); // prompt to enter the next number
+        input = parseInt(input);
+        }
+        document.writeln("The students that failed: " + fail + '<br>')
+        document.writeln("The students that passed " + pass + '<br>')
+        document.writeln("The results: " + result + '<br>')
+        document.writeln("The validresults " + validResults + '<br>')
+    </script>
+</body>
+</html>

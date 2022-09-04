@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prompt to enter tha letter for the weather
+        var heat = parseInt(prompt("Enter how hot it is today"))
+        document.write(heat)
+        // When a entered the loop will test which value it is and return the alert
+        if(heat > 30)
+        {
+            alert("Very Hot!")
+        }
+        else if(heat >= 22 && heat < 30)
+        {
+            alert("T-shirt and shorts weather")
+        }
+        else if(heat >= 18 && heat <= 21)
+        {
+            alert("Around room temperature")
+        }
+        else if(heat >= 15 && heat <= 17)
+        {
+            alert("Long sleeved shirt and trousers")
+        }
+        else if( heat >= 8 && heat <= 13)
+        {
+            alert("Fleece jacket weather")
+        }
+        else if(heat >= 2 && heat <= 7)
+        {
+            alert("Quite cold")
+        }
+        else if(heat >= -10 && heat <= 1)
+        {
+            alert("Very Very Cold!")
+        }
+        else(heat == -10)
+        {
+            alert("Don't go outside unless you have too!")
+        }
+    </script>
+</body>
+</html>

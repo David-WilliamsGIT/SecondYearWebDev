@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // program asks to input numbers until -1 is entered
+        var input;       
+        var average=0;
+        var count=0;
+        var sum=0;
+        input= prompt("Enter the number to test: ");
+        input = parseInt(input);
+        while(input != -1) // a while loop to keep keep testing the entered value until -1 is entered
+        {
+        count++;
+        sum+=input;
+        average=sum/count;
+          
+            input = prompt("Enter the next number: "); // prompt to enter the next number
+            input = parseInt(input);
+        }
+        if(sum != 0)// if statement to check if the value is 0 or greater
+                {
+                    document.writeln("Your average is: " + average);
+                }
+        else
+                {
+                    document.writeln("error");
+                }       
+    </script>
+</body>
+</html>

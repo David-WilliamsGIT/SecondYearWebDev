@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to input a letter and test if it's a vowel or consonant 
+    const isVowel = (input) => {
+    const vowels = ['A','E','I','O','U']
+    document.write(input)
+
+    if(vowels.includes(input)){
+        document.write("$ is a vowel") // can add ${input} inside the () to output the input
+    } else {
+        document.write("is NOT a vowel")
+    }
+return input
+}
+
+let input = prompt('Enter a character')
+let res = input.toUpperCase()
+if(res.length > 1){
+    document.write('input too long, wright only one character')
+
+} else if(res.length < 1){
+    document.write('You need to input one character to test')
+} else {
+    isVowel(res)
+}
+</script>
+</body>
+</html>
