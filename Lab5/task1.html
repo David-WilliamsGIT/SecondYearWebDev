@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task1.css">
+    <script src="task1.js"> </script>
+</head>
+    <body class="formbody">
+            <form name="form">
+                <div class="inputbox container_1">
+                    <label for="Firstname">First Name:</label>
+                    <!--Enter your first name box-->
+                    <input type="text" name="firstname" class="firstText" id="Firstname" placeholder="First Name" 
+                    required pattern="[a-zA-Z .]+" title="Enter alphabetical chars, dots or spaces only."/>
+                </div>
+
+                <!--Enter your surename box-->
+                <div class="inputbox container_1"> <!--A dividing second box for the last name-->
+                    <label for="surname">Surname:</label>
+                    <input type="text" name="surname" id="surname" placeholder="Surename" 
+                    required pattern="[a-zA-Z .]+" title="Enter alphabetical chars, dots or spaces only."/>
+                </div>
+
+                <div class="container_1">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" required pattern="[a-zA-z0-9 .,]+" 
+                    title="Please enter an address that contains letters, numbers, dots or commas"/>
+                </div>
+                
+                <div class="container_1">
+                    <label for="myemail">Email</label>
+                    <input type="email" class="textbox" name="myemail" id="myemail" required/>
+                </div>
+
+                <div class="container_1">
+                    <label for="confirmemail">Confirm Email</label>
+                    <input type="email" class="textbox" name="confirmemail" id="confirmemail" onblur="checkEmail(this)" required />
+                </div>
+
+                <div class="container_1"><!--A diving box for the date of birth-->
+                    <label for="dateofbirth">Date of Birth:</label>
+                    <input type="date" id="dob" class="dateofbirth" name="dob" required oninput="dobCheck(this)" required/>
+                </div>
+
+                <div class="container_1">
+                    <label for="dob">Starting date</label>
+                    <input type="date" class="datebox" id="dob" name="dob" required oninput="dobStartCheck(this)" required/>
+                </div>
+
+                <!--Enter your phone number with a range of numbers and spaces-->
+                <div class="phone container_1">
+                    <label for="phone">Enter your phone number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required pattern="[0-9() -]+"> 
+                </div>
+
+                <div class="myButton container_1"> <!--A Submiting button for both when all the information is entered and to clear that information-->
+                    <input type="submit" value="Submit" name="submit">
+                    <br>
+                    <input type="reset" value="Clear Form" name="rest">
+                </div>
+            </form>
+    </body>
+</html>

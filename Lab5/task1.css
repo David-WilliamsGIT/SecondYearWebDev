@@ -1,0 +1,59 @@
+html { /* Making sure the html is always at max width and height */
+    width: 100%;
+    height: 100%;
+    background-color: #fccd4c;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+}
+input {
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+}
+
+.container_1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+.formbody {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    border: solid black;
+    width: fit-content;
+}
+
+.mybutton {
+    margin-top: 20px;
+    position: relative;
+}
+
+.emailcontainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=reset] { /* making the reset button have a beige background and a blue border */
+    background-color: antiquewhite;
+}
+input[type=text] { /* making the firstname and last name box look a different colour */
+    background-color: antiquewhite;
+}
+
+input[type=email] { /* making the email box look a different colour */
+    background-color: antiquewhite;
+}
+
+input[type=date] { /* making the date box look a different colour */
+    background-color: antiquewhite;
+}
+
+input[type=tel] { /* making the phone box look a different colour */
+    background-color: antiquewhite;
+}
