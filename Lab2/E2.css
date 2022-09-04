@@ -1,0 +1,11 @@
+.footer { /* Creates a constant footer that stays at the bottom of the screen when scrolling */
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+}

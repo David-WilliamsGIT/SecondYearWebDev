@@ -1,0 +1,38 @@
+.box { /* the box that contains all the words that will be set in their own position */
+    border: solid blue;
+    background-color: aqua;
+    width: 700px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+}
+
+.topright { /* sets the word top right to the top right of the box */
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.topleft { /* sets the word top left to the top left of the box */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.bottomright { /* sets the word bottom right to the bottom right of the box */
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.bottomleft { /* sets the word bottom left to the bottom left of the box */
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.middle { /* sets the word middle in the middle of the box */
+    position: absolute;
+    top: 50%;
+    left:calc(50% - 25px);
+}

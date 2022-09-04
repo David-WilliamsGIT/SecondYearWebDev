@@ -1,0 +1,46 @@
+.redbox { /* box to encapsulate all the content within */
+    border: red solid;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+}
+
+.boxone { /* box to seperate from the cards */
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.img1 { /* the card of diamonds image*/
+    position: absolute;
+    top: 25%;
+    left: 46%;
+}
+
+.img2 { /* the card of ace image */
+    position: absolute;
+    top: 26%;
+    left: 47%;
+}
+
+.img3 { /* the card of jack */
+    position: absolute;
+    top: 27%;
+    left: 48%;
+}
+
+.img4{ /* the cards of king */
+    position: absolute;
+    top: 28%;
+    left: 49%;
+}
+
+.img5 { /* the card of queen */
+    position: absolute;
+    top: 29%;
+    left: 50%;
+}
+
+/* Could set the images to stack ontop of each other more like in the worsheet but
+It didn't look as good. All I would need to due is alter the left element by .5% and
+the top in similar fashion. */

@@ -1,0 +1,32 @@
+.boxone { /* Box 1 positioned in its own position with its own colour and border */
+box-sizing: border-box;
+background-color: aquamarine;
+width: 100px;
+height: 100px;
+border:25px solid aqua;
+top: 25;
+left: 30px;
+position: relative;
+}
+
+.boxtwo { /* Box 2 positioned in its own position with its own colour and border */
+box-sizing: border-box;
+background-color: red;
+width: 100px;
+height: 100px;
+border:15px solid maroon;
+top: 50%;
+left: 25%;
+position: relative;
+}
+
+.boxthree { /* Box 3 positioned in its own position with its own colour and border */
+box-sizing: border-box;
+background-color: purple;
+width: 100px;
+height: 100px;
+border:10px solid slateblue;
+bottom: 25px;
+right: 30px;
+position: relative;
+}

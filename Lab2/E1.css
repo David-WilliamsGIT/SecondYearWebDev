@@ -1,0 +1,24 @@
+.pic1 { /* Picture positioned to the right side */
+    float: right;
+    height: 100%;
+    width:  200px;
+}
+
+.pic2 { /* Picture positioned to the left */
+    float: left;
+    height: 150px;
+    width:  150px;
+}
+
+.firstbox { /* First box for the first picture that is positioned on the right side */
+    border: solid black;
+    margin-left: 600px;
+    padding: auto;
+}
+
+.secondbox { /* Seconed box for the second picture that is positioned to the left side */
+    border: solid black;
+    margin-top: 25px;
+    margin-right: 600px;
+    padding: auto;
+}

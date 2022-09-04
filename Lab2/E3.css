@@ -1,0 +1,23 @@
+.boxone { /* Box 1 with it's own colours and border size */
+box-sizing: border-box;
+background-color: aquamarine;
+width: 100px;
+height: 100px;
+border:25px solid aqua;
+}
+
+.boxtwo { /* Box 2 with it's own colours and border size */
+box-sizing: border-box;
+background-color: red;
+width: 100px;
+height: 100px;
+border:15px solid maroon;
+}
+
+.boxthree { /* Box 3 with it's own colours and border size */
+box-sizing: border-box;
+background-color: purple;
+width: 100px;
+height: 100px;
+border:10px solid slateblue;
+}

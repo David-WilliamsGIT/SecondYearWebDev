@@ -1,0 +1,76 @@
+.box { /* Box for the clouds picture */
+    background-color: #87CEEB;
+    background-image: url(Pictures/clouds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;  
+    margin: 0px auto;
+    padding: 0%;
+}
+
+.boxone { /* this is the box that sets the headline text in the sky of the webpage */
+    text-align: center;
+    color: red;
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 100px;
+}
+
+.boxseven { /* this is the box that sets the size of the grass for the webpage */
+    border-top:1px solid green;
+    width: 100%;
+    background-color: green;
+    height: 30%;
+    max-height: auto;
+    bottom: 0;
+    position: absolute;
+}
+
+.sheep { /* a gif of a sheep that is constantly moving and set to the left side of the web page */
+    height: 150px auto;
+    width: auto;
+    max-width: 13%;
+    bottom: 25%;
+    left: 10%;
+    position: absolute;
+}
+
+.cow { /* sets the cow position to looks like it is standing on top of the hill of grass */
+    position: absolute;
+    bottom: 95%;
+    left: 35%;
+    height: 150px auto;
+    width: auto;
+    max-width: 10%;
+
+}
+
+.man { /* sets man the middle of the web page while also standing on the grass */
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    height: auto;
+    max-height: 80%;
+    width: auto;
+    max-width: 50%;
+}
+
+.tree { /* setting the tree to the bottom right side under the sun */
+    position: absolute;
+    bottom: 25%;
+    left: 66%;
+    height: auto;
+    max-height: 130%;
+    width: auto;
+    max-width: 50%;
+}
+
+.sun { /* set to go top right position and above the tree */
+    top: 5%;
+    right: 5%;
+    position: absolute;
+    height: auto;
+    max-height: 25%;
+    width: auto;
+    max-width: 25%;
+}
