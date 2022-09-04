@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Task4.css">
+    <title>Task 4</title>
+</head>
+<body>
+    <form>
+        <fieldset class="fieldsetone">
+        <h1>Personal Document</h1><br>
+
+        <div class="inputbox"><!--A diving box for the first name-->
+            <label for="Firstname">First Name</label>
+            <input type="text" name="firstname" id="Firstname">
+        </div>
+        <div class="inputbox"> <!--A dividing second box for the last name-->
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="surname">
+        </div>
+
+        <div class="phone">
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required> 
+        </div>
+
+        <div class="email"><!--A diving box for emails-->
+            <label for="Email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="email" required title="You must enter a valid email"> 
+        </div>
+
+        <div>
+            <a href="https://www.w3schools.com/">Visit W3Schools.com!</a> 
+        </div>
+
+        <div class="dateofbirth"><!--A diving box for the date of birth-->
+            <label for="dateofbirth">Date of Birth</label>
+            <input type="date" id="start" name="trip-start"
+            value="11-11-2021" min="01-01-1950" max="31-12-2021" required>
+        </div>
+
+        <div class="radiobox"> <!--A divided box for the restered form with a radio buttom which can only one can be selected-->
+            <label>Customer?</label><br>
+            <input type="radio" name="Customer?" id="Customer?" value="Regy"/> <label for="Customer?">Yes</label> <input type="radio" name="customer?" id="differentcustomer" value="Regy"/> <label for="differentcustomer">No</label><br> 
+        </div>
+        </div>
+
+        
+        </fieldset>
+        <div class="myButton"> <!--A Submiting button for both when all the information is entered and to clear that information-->
+            <h3>Would you like to submit?</h3>
+            <input type="submit" value="Send Form" name="submit"><br><br>
+            <h3>Would you like to Clear your input?</h3>
+            <input type="reset" value="Clear Form" name="reset">
+        </div>
+
+        <div class="fieldsettwo">
+            <fieldset>
+
+                <h2>Additional Information</h2>
+    
+                <div class="checkbox1"> <!--A box where you can tick checkboxes for what electrics you have-->
+                    <p class="text">Select the electrics you have:</p>
+                    <div class="electrics">
+                        <input type="checkbox" name="electrics" id="E1" value="toaster">
+                        <label for="E1">Do you have a toaster?</label>
+                        <div class="electrics">
+                            <input type="checkbox" name="electrics" id="E2" value="oven">
+                            <label for="E2">Do you have a oven?</label>
+                            <div class="electrics">
+                                <input type="checkbox" name="electrics" id="E3" value="computer">
+                            <label for="E3">Do you have a Computer?</label>
+                            </div>
+                            <div class="electrics">
+                                <input type="checkbox" name="electrics" id="E4" value="dishwasher">
+                                <label for="E4">Do you have a dishwasher</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="children">
+                    <label for="children">How many children? (0 - 10)):</label>
+                    <input type="number" id="children" name="children"
+                    min="0" max="10">
+                </div>
+
+                <div class="Satisfaction">
+                    <label for="Satisfaction">On a scale of 0 - 10 how satisfied were you?:</label>
+                    <input type="range" id="Satisfaction" name="satisfied" min="0" max="10" oninput="this.nextElementSibling.value = this.value">>
+                <output>5</output>
+                </div>
+
+                <h3>Everything above is optional</h3>
+            </fieldset>
+  
+    </form>
+    
+</body>
+</html>

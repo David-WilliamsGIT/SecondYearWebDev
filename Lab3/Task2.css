@@ -1,0 +1,70 @@
+html { /* Making sure the html is always at max width and height */
+    width: 100%;
+    height: 100%;
+}
+
+.form { /* making the form have a border and wrap around the content */
+    margin: auto;
+    border: solid black;
+    width: fit-content;
+    background-color: #90ee90;
+}
+
+h2 { /* Giving the H2 header it's own font style, some bold and underline to it */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.inputbox { /* putting space between content to make more readible */
+    margin-bottom: 10px;
+}
+
+.radiobox { /* Space between content to make readible */
+    margin-top: 20px;
+}
+
+.dropdown { /* space between content, changing how the selector looks and adding a curved bored with some colour */
+    margin-top: 20px;
+    font-size: 13px;
+    padding: 10px 8px 10px 14px;
+    border: 1px solid;
+    width: 250px;
+    background-color: #ADE6D1;
+    border-radius: 6px;
+    position: relative;
+}
+
+.checkbox {
+    /* I don't want anything in here */
+}
+
+.checkbox1 { /* space between content so whenever the selector box is opened you can still read under it */
+    margin-top: 55px;
+}
+
+.courses { /* space between each of the text */
+    margin-top: 2px;
+}
+
+.schoolyear {
+    /* I want nothing in here */
+}
+
+.myButton { /* space between conent */
+    margin-top: 20px;
+}
+
+input[type=text] { /* making the firstname and last name box look a different colour */
+    background-color: antiquewhite;
+}
+
+input[type=submit] { /* making the submit button have a black border with a beighe colour */
+    background-color: beige;
+    border-color: black;
+}
+
+input[type=reset] { /* making the reset button have a beige background and a blue border */
+    background-color: beige;
+    border-color: blue;
+}

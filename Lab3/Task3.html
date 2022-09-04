@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Task3.css">
+    <title>Task 3</title>
+</head>
+<body>
+    <form class="form">
+        <h2>Student Form</h2> <!--H2 header for the form-->
+
+        <div class="inputbox"><!--A diving box for the first name-->
+            <label for="Firstname">First Name</label>
+            <input type="text" name="firstname" id="Firstname">
+        </div>
+        <div class="inputbox"> <!--A dividing second box for the last name-->
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="surname">
+        </div>
+
+        <div class="email"><!--A diving box for emails-->
+            <label for="Email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="email" required title="You must enter a valid email"> 
+        </div>
+
+        <div class="radiobox"> <!--A divided box for the restered form with a radio buttom which can only one can be selected-->
+            <label>Registered?</label><br>
+            <input type="radio" name="registered" id="registered" value="Regy"/> <!--The radio button called register-->
+            <label for="registered">Registered</label><br>
+            <input type="radio" name="registered" id="notregistered" value="Regy"/>
+            <label for="notregistered">Not Registered</label><br>
+        </div>
+
+        <div class="dateofbirth"><!--A diving box for the date of birth-->
+            <label for="dateofbirth">Date of Birth</label>
+            <input type="date" id="start" name="trip-start"
+            value="11-11-2021" min="01-01-1950" max="31-12-2021" required>
+        </div>
+
+        <div>
+            <a href="https://www.w3schools.com/">Visit W3Schools.com!</a> 
+        </div>
+
+        <div class="dropdown" > <!--A drop down box to select the year-->
+            Select Year:
+            <select name="schoolyear">
+                <option value="firstYear">First Year</option>
+                <option value="secondYear">Second Year</option>
+                <option value="thirdYear">Third Year</option>
+                <option value="fourthYear">Final Year</option>
+            </select>
+        </div>
+
+        <div class="checkbox1"> <!--A box where you can tick checkboxes for what course you want to select-->
+            Select the course(s) taken:
+            <div class="courses">
+                <input type="checkbox" name="course" id="C1" value="Deg in Soft End">
+                <label for="C1">Degree in Software Engineering</label>
+                <div class="courses">
+                    <input type="checkbox" name="course" id="C2" value="Deg in IT Mgt">
+                    <label for="C2">Degree in IT management</label>
+                    <div class="courses">
+                        <input type="checkbox" name="course" id="C3" value="Deg in Cyber">
+                    <label for="C3">Degree in Cyber Security</label>
+                    </div>
+                    <div class="courses">
+                        <input type="checkbox" name="course" id="C4" value="Deg in Comp Science">
+                        <label for="C4">Degree in Computer Science</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="myButton"> <!--A Submiting button for both when all the information is entered and to clear that information-->
+            <input type="submit" value="Send Form" name="submit"><br><br>
+            <input type="reset" value="Clear Form" name="reset">
+        </div>
+    </form>
+    
+</body>
+</html>
