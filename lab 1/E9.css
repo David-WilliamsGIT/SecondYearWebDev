@@ -1,0 +1,65 @@
+.box {
+width: 600px;
+height: 100px;
+margin-bottom: 25px;
+text-align: center;
+}
+
+.red {
+border: solid red;
+background-color: bisque;
+}
+
+.secondbox {
+    width: 600px;
+    height: 100px;
+    border: ridge black;
+    background-color: teal;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.thirdbox {
+    width: 600px;
+    height: 100px;
+    border: dashed orange;
+    background-color: brown;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.fourthbox {
+    width: 600px;
+    height: 100px;
+    border: dotted purple;
+    background-color: burlywood;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.fifthbox {
+    width: 600px;
+    height: 100px;
+    border: double yellow;
+    background-color: steelblue;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.sixthbox {
+    width: 600px;
+    height: 100px;
+    border: groove green;
+    background-color:crimson ;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.seventhbox {
+    width: 600px;
+    height: 100px;
+    border: inset gold;
+    background-color:aquamarine;
+    margin-bottom: 25px;
+    text-align: center;
+}
